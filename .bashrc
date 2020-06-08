@@ -8,7 +8,10 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# Add home user bin
+export PATH="${PATH}:${HOME}/bin"
 
+# GTK theme for QT apps
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # >>> conda initialize >>>
@@ -31,3 +34,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # For new terminal in same dir
 source /etc/profile.d/vte.sh
+
+# Alias for conda astro
+alias condastro='conda activate astro'
