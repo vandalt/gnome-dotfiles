@@ -33,7 +33,8 @@ Plug 'dense-analysis/ale'
 Plug 'nvie/vim-flake8'
 
 " Color scheme
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -80,14 +81,15 @@ syntax on
 
 " Set colorscheme
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
+colorscheme nord
 
 " Line numbers
 set nu
 
 " Easy switch between themes
-call togglebg#map("<F5>")
+"#call togglebg#map("<F5>")
 
 " Auto pep8 check when saving (run with F7 to avois syntastic incomp)
 autocmd BufWritePost *.py call flake8#Flake8()
